@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Dropper : MonoBehaviour {
 
+	//[SerializeField]
+	//private GameObject 
 
 	// Start is called before the first frame update
 	void Start() {
