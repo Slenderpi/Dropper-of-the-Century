@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 4065146212183222255}
   m_Layer: 0
   m_Name: PlayerCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1647eb9644d1fbf48b3787a1e469260b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: -1890933490744516970}
   speed: 3
 --- !u!1001 &4676257806113697482
 PrefabInstance:
