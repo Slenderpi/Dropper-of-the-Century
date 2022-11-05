@@ -72,7 +72,7 @@ public class ThirdPersonMovement : MonoBehaviour {
             float normalAngle = Vector3.Angle(hit.normal, transform.up);
             if (normalAngle <= controller.slopeLimit) {
                 float maxDist = radius / Mathf.Cos(Mathf.Deg2Rad * normalAngle) + 0.02f; // 0.02f error
-                print("hit.distance: " + hit.distance + "; maxDist: " + maxDist);
+                //print("hit.distance: " + hit.distance + "; maxDist: " + maxDist);
                 if (hit.distance <= maxDist)
                     IsGrounded = true;
             }

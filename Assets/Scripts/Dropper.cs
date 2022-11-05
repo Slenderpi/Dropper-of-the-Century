@@ -4,17 +4,27 @@ using UnityEngine;
 
 public class Dropper : MonoBehaviour {
 
-	//[SerializeField]
-	//private GameObject 
+	public GameObject DroppedPiecePrefab;
 
-	// Start is called before the first frame update
-	void Start() {
+	public float spawnDelay;
+	public float piecePointValue;
 
+	Transform dropLocation;
+
+	private void Start() {
+		dropLocation = gameObject.transform.Find("DropLocation");
+		InvokeRepeating("SpawnPiece", GameManager.DROPPER_START_DELAY, spawnDelay);
 	}
 
-	// Update is called once per frame
-	void Update() {
+	protected virtual void SpawnPiece() {
+		if (DroppedPiecePrefab == null) {
+			Debug.LogWarning("No DroppedPiecePrefab selected!");
+			return;
+		}
 
+		GameObject piece = Instantiate(DroppedPiecePrefab, dropLocation.transform.position, DroppedPiecePrefab.transform.rotation);
+		Piece pScript = piece.GetComponent<Piece>();
+		pScript.pointValue = piecePointValue;
 	}
 
 }
