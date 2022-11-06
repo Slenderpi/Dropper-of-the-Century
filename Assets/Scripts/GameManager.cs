@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
 
 	public const float PIECE_LIFE_DURATION = 60;
 
+	public const float CONVEYOR_VELOCITY = 9.6f;
+
 	public enum PlayerState { Dead, Alive, Invincible };
 
 	private void Awake() {
