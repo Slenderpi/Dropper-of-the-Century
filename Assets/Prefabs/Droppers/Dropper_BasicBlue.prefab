@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 1446116495993749355}
   - component: {fileID: 2565729044894610128}
   m_Layer: 0
-  m_Name: TestDropper
+  m_Name: Dropper_BasicBlue
   m_TagString: DropperComponent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c94f7bd1a6e9311418f22270efa1396c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DroppedPiecePrefab: {fileID: 6705885289242150289, guid: faf6a820f2e2a0143a2bb0ee5647b048, type: 3}
+  DroppedPiecePrefab: {fileID: 1841860333717448496, guid: 33f21cbbc28125a478d4fcd0ae9ef95e, type: 3}
   spawnDelay: 0.5
   piecePointValue: 1
 --- !u!1001 &2811981202371989715
