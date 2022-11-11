@@ -27,6 +27,11 @@ public class Humanoid : MonoBehaviour {
 		OnPlayerPointsChanged(points, this.points);
 	}
 
+	public void RemovePoints(float points) {
+		this.points -= points;
+		OnPlayerPointsChanged(points, this.points);
+	}
+
 	public void TakeDamage(float amnt) {
 		if (humanoidState != GameManager.PlayerState.Dead &&
 			humanoidState != GameManager.PlayerState.Invincible) {

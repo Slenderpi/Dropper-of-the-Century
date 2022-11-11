@@ -43,7 +43,7 @@ public class ThirdPersonMovement : MonoBehaviour {
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-            controller.Move(moveDirection.normalized * speed * (controller.isGrounded ? 0.5f : 1) * Time.deltaTime);
+            controller.Move(moveDirection.normalized * speed * (controller.isGrounded ? 1 : 0.8f) * Time.deltaTime);
         }
 
         if (IsGrounded) {
