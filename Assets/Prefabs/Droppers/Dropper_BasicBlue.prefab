@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7609398651511677005}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.752, z: 2.52}
+  m_LocalPosition: {x: 0, y: 1.928, z: 1.779}
   m_LocalScale: {x: 0.20527834, y: 0.20527834, z: 0.2231856}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DroppedPiecePrefab: {fileID: 1841860333717448496, guid: 33f21cbbc28125a478d4fcd0ae9ef95e, type: 3}
-  spawnDelay: 0.5
+  spawnDelay: 1
   piecePointValue: 1
 --- !u!114 &7814807922171213423
 MonoBehaviour:
@@ -108,15 +108,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a720b4ddf066914d902b129748359ac, type: 3}
       propertyPath: m_LocalScale.x
-      value: 29.316778
+      value: 21.02482
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a720b4ddf066914d902b129748359ac, type: 3}
       propertyPath: m_LocalScale.y
-      value: 29.316778
+      value: 21.02482
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a720b4ddf066914d902b129748359ac, type: 3}
       propertyPath: m_LocalScale.z
-      value: 29.316778
+      value: 21.02482
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a720b4ddf066914d902b129748359ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -124,7 +124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a720b4ddf066914d902b129748359ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.527
+      value: 1.102
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a720b4ddf066914d902b129748359ac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -161,6 +161,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2a720b4ddf066914d902b129748359ac, type: 3}
       propertyPath: m_Name
       value: Dropper_BasicBlue
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a720b4ddf066914d902b129748359ac, type: 3}
+      propertyPath: m_TagString
+      value: DropperComponent
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a720b4ddf066914d902b129748359ac, type: 3}

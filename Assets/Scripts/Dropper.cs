@@ -11,6 +11,9 @@ public class Dropper : MonoBehaviour {
 
 	Transform dropLocation;
 
+	private void Awake() {
+		gameObject.SetActive(false);
+	}
 	private void Start() {
 		dropLocation = gameObject.transform.Find("DropLocation");
 		InvokeRepeating("SpawnPiece", GameManager.DROPPER_START_DELAY, spawnDelay);
